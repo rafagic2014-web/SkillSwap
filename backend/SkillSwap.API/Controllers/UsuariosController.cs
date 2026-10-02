@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using SkillSwap.API.Data;
 using SkillSwap.API.Models;
 using SkillSwap.API.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SkillSwap.API.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class UsuariosController : ControllerBase
     {
